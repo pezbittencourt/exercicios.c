@@ -25,10 +25,10 @@ void hanoi(int quantiDiscos, int origem, int destino, int auxiliar)
         movimentacao(origem, destino);
         return;
     }
-    
-        hanoi(quantiDiscos - 1, origem, auxiliar, destino);
-        movimentacao(origem, destino); // movimento do maior disco
-        hanoi(quantiDiscos-1, auxiliar, destino, origem);
+
+    hanoi(quantiDiscos - 1, origem, auxiliar, destino);
+    movimentacao(origem, destino); // movimento do maior disco
+    hanoi(quantiDiscos - 1, auxiliar, destino, origem);
 }
 int main()
 {

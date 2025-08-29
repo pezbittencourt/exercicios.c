@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-int verificadorDeNumero(int num, int numDesejado) {
+int verificadorDeNumero(int num, int numDesejado)
+{
 
-    if (num == 0) {
+    if (num == 0)
+    {
         return 0;
     }
     int ultimo = num % 10;
@@ -16,7 +18,8 @@ int verificadorDeNumero(int num, int numDesejado) {
     }
 }
 
-int main() {
+int main()
+{
     int num, numDesejado;
     printf("me diga um numero e qual digito voce deseja verificar quantas vezes ele aparece no numero: ");
     scanf("%d", &num);
